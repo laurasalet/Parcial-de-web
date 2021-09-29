@@ -1,0 +1,31 @@
+mat-icon {
+    position: relative;
+    top: 10%;
+}
+
+.nav-link {
+    font-size: 100%;
+    color: white;
+    height: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    transition: all .3s ease;
+}
+
+#conBorde {
+    border-color: #FFF !important;
+    border-right: 1px solid;
+}
+
+.nav-link:hover {
+    background: #919699;
+    color: white;
+    border-style: none;
+}
+
+.nav-link:active {
+    background: #d1d3d4;
+    color: #070709;
+    border-style: none;
+    transition: all ease;
+}

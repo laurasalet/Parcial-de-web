@@ -1,0 +1,21 @@
+.container {
+    padding-top: 0%;
+    padding-bottom: 5%;
+}
+
+#Titulo {
+    color: rgb(17, 16, 16);
+    text-align: center;
+}
+
+#Texto {
+    margin-top: 5%;
+    color: rgb(20, 20, 20);
+    text-align: justify;
+}
+
+.cuerpo {
+    background-position: 100%;
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
