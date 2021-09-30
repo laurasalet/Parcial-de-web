@@ -1,0 +1,26 @@
+<body>
+
+    <br>
+    <h2> Registro de ayudas</h2>
+    <div class="form-group">
+        <label>Identificador de ayuda</label>
+        <input type="number" name="id" [(ngModel)]="ayuda.id_ayuda" />
+    </div>
+    <div class="form-group">
+        <label>Tipo de ayuda</label>
+        <select name="tipo" [(ngModel)]="ayuda.tipo_ayuda">
+   <option>Portátiles</option>
+   <option>Tablet</option>
+   <option>Bicicletas</option>
+</select>
+    </div>
+    <div class="form-group">
+        <label>Cantidad de ayuda</label>
+        <input type="number" name="cant" [(ngModel)]="ayuda.cant_ayuda">
+    </div>
+
+    <div>
+        <button type="button" (click)="add()" class="btn btn-primary mr-1">Registrar</button>
+    </div>
+    <br>
+</body>

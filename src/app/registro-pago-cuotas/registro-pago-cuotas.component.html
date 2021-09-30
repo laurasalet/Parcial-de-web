@@ -1,0 +1,26 @@
+<body>
+    <br>
+    <h2> Registro de personas beneficiadas </h2>
+    <div class="form-group">
+        <label>Identificador</label>
+        <input type="number" name="id" [(ngModel)]="cuota.id_cuota" />
+    </div>
+    <div class="form-group">
+        <label>Nombre</label>
+        <input type="text" name="nombre" [(ngModel)]="cuota.nombre">
+    </div>
+    <div class="form-group">
+        <label>Tipo de ayuda</label>
+        <select name="tipo" [(ngModel)]="cuota.tipo_ayuda">
+ <option>Portátiles</option>
+ <option>Tablet</option>
+ <option>Bicicletas</option>
+</select>
+    </div>
+
+
+    <div>
+        <button type="button" (click)="add()" class="btn btn-primary mr-1">Registrar</button>
+    </div>
+    <br>
+</body>

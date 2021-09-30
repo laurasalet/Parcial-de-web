@@ -1,0 +1,41 @@
+<div>
+    <table class="table table-striped" *ngIf='ayudas && ayudas.length'>
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Identificador</th>
+                <th scope="col">Tipo de Ayuda</th>
+                <th scope="col">Cantidad de ayuda</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let ayuda of ayudas; index as i ">
+                <th scope="row">{{ i + 1 }}</th>
+                <td>{{ ayuda.id_ayuda }} </td>
+                <td>{{ayuda.tipo_ayuda }}</td>
+                <td>{{ ayuda.cant_ayuda }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+
+
+    <table class="table table-striped" *ngIf='cuotas && cuotas.length'>
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Identificador</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Tipo de ayuda</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let cuota of cuotas; index as i ">
+                <th scope="row">{{ i + 1 }}</th>
+                <td>{{ cuota.id_cuota }} </td>
+                <td>{{ cuota.nombre }}</td>
+                <td>{{ cuota.tipo_ayuda }}</td>
+        </tbody>
+    </table>
+</div>

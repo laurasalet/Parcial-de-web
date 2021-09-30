@@ -8,6 +8,9 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
+import { RegistrarAyudaComponent } from './registrar-ayuda/registrar-ayuda.component';
+import { RegistroPagoCuotasComponent } from './registro-pago-cuotas/registro-pago-cuotas.component';
+import { MostrarComponent } from './mostrar/mostrar.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { FormsModule } from '@angular/forms';
     NavMenuComponent,
     FooterComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    RegistrarAyudaComponent,
+    RegistroPagoCuotasComponent,
+    MostrarComponent
   ],
   imports: [
     BrowserModule,
